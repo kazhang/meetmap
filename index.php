@@ -29,8 +29,7 @@
         var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
         var cirs = [];
 <?php
-function utf8_clean($str)
-{
+function utf8_clean($str) {
     return iconv('UTF-8', 'UTF-8//IGNORE', $str);
 }
 
@@ -38,7 +37,7 @@ function load($keyword, $type)
 {
     $content = "";
     $save_flag = false;
-    if(file_exists($type.'/'.$keyword)&&false)
+    if(file_exists($type.'/'.$keyword))
         $f = fopen($type.'/'.$keyword, 'r');
     else
     {
