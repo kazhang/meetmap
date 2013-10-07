@@ -127,10 +127,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
 <?php
            }
        }
-       else
-       {
-           //echo json_last_error();
-       }
     }
 }
 ?>
